@@ -1,0 +1,94 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "KiCad - Ejercicio 1"
+Date "2018-09-03"
+Rev "1"
+Comp "Luis Herrera"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5B8DD91A
+P 3400 4050
+F 0 "J?" H 3320 4367 50  0000 C CNN
+F 1 "Conn_01x03" H 3320 4276 50  0000 C CNN
+F 2 "" H 3400 4050 50  0001 C CNN
+F 3 "~" H 3400 4050 50  0001 C CNN
+	1    3400 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5B8DDC38
+P 4150 3450
+F 0 "D?" H 4142 3195 50  0000 C CNN
+F 1 "LED" H 4142 3286 50  0000 C CNN
+F 2 "" H 4150 3450 50  0001 C CNN
+F 3 "~" H 4150 3450 50  0001 C CNN
+	1    4150 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B8DDE72
+P 4150 3800
+F 0 "C?" V 3898 3800 50  0000 C CNN
+F 1 "C" V 3989 3800 50  0000 C CNN
+F 2 "" H 4188 3650 50  0001 C CNN
+F 3 "~" H 4150 3800 50  0001 C CNN
+	1    4150 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B8DDF58
+P 4750 4000
+F 0 "R?" H 4680 3954 50  0000 R CNN
+F 1 "R" H 4680 4045 50  0000 R CNN
+F 2 "" V 4680 4000 50  0001 C CNN
+F 3 "~" H 4750 4000 50  0001 C CNN
+	1    4750 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5B8DE149
+P 4150 4450
+F 0 "D?" H 4150 4666 50  0000 C CNN
+F 1 "D" H 4150 4575 50  0000 C CNN
+F 2 "" H 4150 4450 50  0001 C CNN
+F 3 "~" H 4150 4450 50  0001 C CNN
+	1    4150 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3950 3600 3800
+Wire Wire Line
+	3600 3800 4000 3800
+Wire Wire Line
+	4300 3800 4750 3800
+Wire Wire Line
+	4750 3800 4750 3850
+Wire Wire Line
+	4750 4150 4750 4450
+Wire Wire Line
+	4750 4450 4300 4450
+Wire Wire Line
+	4000 4450 3600 4450
+Wire Wire Line
+	3600 4450 3600 4150
+Wire Wire Line
+	4000 3450 4000 3800
+Connection ~ 4000 3800
+Wire Wire Line
+	4300 3450 4300 3800
+Connection ~ 4300 3800
+NoConn ~ 3600 4050
+$EndSCHEMATC
